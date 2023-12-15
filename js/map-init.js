@@ -22,3 +22,64 @@ function init() {
         map: map,
     });
 }
+//-------------------------Delete cart-------------------------
+function deleteCart(){
+    var carItem = document.querySelectorAll("tbody tr")
+    for (var i=0;i<carItem.length;i++){
+        var product = document/querySelectorAll(".cart-delete")
+        productT[i].addEventListener("click", function(event){
+            var cartDelete = event.target
+            var cartitemR = cartDelete.parentElement.parentElement
+            cartitemR.remove()
+            //cosole.log(caritemR)
+        })
+    }
+}
+// thay đổi số lượng sản phẩm
+var quantity_input = document.getElementsByClassName("cart-quantity-input");
+for (var i = 0; i < quantity_input.length; i++) {
+  var input = quantity_input[i];
+  input.addEventListener("change", function (event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+      input.value = 1;
+    }
+    updatecart()
+  })
+}
+
+carttotal()
+//----------------Tính tổng-----------------
+function carttotal(){
+  var carItem = document.querySelectorAll("tbody tr")
+  var totalC = 0 
+  //console.log(carItem.length)
+  for (var i=0;i<carItem.length;i++){
+    var inputValue = carItem[i].querySelector("input").value
+    //console.log(inputValue)
+    var productPrice = carItem[i].querySelector("span").innerHTML
+    //console.log(productPrice)
+    totalA = inputValue*productPrice*1000
+    totalB = totalA.toLocaleString('de-DE')
+    console.log(totalB)
+    totalC = totalC + totalA
+    totalD = totalC.toLocaleString(de-DE)
+  }
+  var carttotalA = document.querySelector(".o-summary__box td")
+  carttotalA.innerHTML = totalD
+  console.log(carttotalA)
+}
+tinhTong()
+
+
+function addCart(objSp){
+  cell3.innerHTML = objSp.price * objSp.qty;
+  tong += objSp.price * objSp.qty;
+}
+function tinhTong(){
+  var tong = 0;
+  giohang.forEach(item => {
+    tong += item.price * item.qty;
+  })
+  document.getElementById("tong").innerHTML = tong;
+}
