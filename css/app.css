@@ -1,55 +1,4 @@
-/*
-Theme Name: Ludus
-Author: ahfront
-Description: Ludus - is complete multipurpose polish eCommerce template built with
-best practices. It will be perfect solution for your current or future shop, customizable
-into any store contains responsiveness & great UI. Well tested on compatible browsers.
-The template contains 40+ HTML files, 3 Homepages, 3 Header Styles, 12 Dashboard Pages,
-3 Product Pages, 7 Shop Pages, 5 Blog Pages, Box mode and generated 10 Color variations but could
-create unlimited colors.
-Version: 1.0.0
-Tags: one-column, two-columns, three-columns, four-columns, right-sidebar,
-custom-colors, box-mode, custom-header, custom-menu, custom-logo, featured-images
-*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.0 Base Styles
-2.0 Typography
-3.0 Pre-configured styles
-4.0 Layout Utility Styles
-5.0 Components
-6.0 Header
-  6.1 Primary Nav
-  6.2 Secondary Nav
-7.0 Footer
-  7.1 Outer-Footer
-  7.3 Lower-Footer
-9.0 About-Page
-10.0 Contact-Page
-11.0 Cart-Wishlist-Pages
-12.0 Empty-404-Pages
-13.0 Checkout-Page
-14.0 Signin Signup Lost Password-Page
-15.0 FAQ-Page
-16.0 Dashboard-Pages
-17.0 Blog-Pages
-18.0 Product-Detail-Pages
-19.0 Shop-Pages
-20.0 Vendor Extension Pages
-  20.1 Bootstrap
-  20.2 jquery.shopnav
-  20.3 Owl-Carousel
-  20.4 jquery.scrollUp
-  20.5 Slick Carousel
 
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-1.0 Base Styles
---------------------------------------------------------------*/
-/**
- * Setup box-sizing
- */
 html {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; }
@@ -1110,7 +1059,7 @@ input::-ms-clear {
 .product-o__review {
   margin-left: 4px;
   font-size: 12px;
-  color: #a0a0a0; }
+  color: hsl(0, 0%, 63%); }
 
 .product-o__price {
   display: block;
