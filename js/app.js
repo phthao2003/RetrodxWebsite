@@ -381,7 +381,6 @@
         }
     };
 
-
     // Blog Post Gallery
     RESHOP.blogPostGallery = function() {
         if ($collectionPostGallery.length) {
