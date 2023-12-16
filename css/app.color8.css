@@ -7453,8 +7453,8 @@ trên dưới cho cân đối */
 .pd-detail__price {
   color: #0c18c0;
   font-size: 2rem;
-  font-weight: 700; }
-
+  font-weight: 700;}
+  
 .pd-detail__discount {
   color: #0c18c0;
   font-size: 14px;
@@ -7614,89 +7614,115 @@ trên dưới cho cân đối */
    flex-wrap: wrap;
  }
 
- .color__radio {
-   position: relative;
-   line-height: 1.89;
-   margin-right: 36px;
-   display: inline-block;
- }
-
- .color__radio [type="radio"] {
-   position: absolute;
-   left: 0;
-   top: 0;
-   min-width: 30px;
-   width: 100%;
-   height: 100%;
-   z-index: 2;
-   opacity: 0;
-   cursor: pointer;
- }
-
- .color__radio-label {
-   position: initial;
-   display: inline-block;
- }
-
- .color__radio-label:before,
- .color__radio-label:after {
-   content: '';
-   width: 30px;
-   height: 30px;
-   display: block;
-   border: 2px solid transparent;
-   z-index: 0;
-   position: absolute;
-   left: 0;
-   top: 0;
- }
-
- .color__radio-label:after {
-   -webkit-transform: scale(0.6);
-   transform: scale(0.6);
-   background-color: inherit;
- }
-
- .color__radio input:checked+label:before {
-   border-color: #d2d2d2;
- }
-
- .size__radio {
-   position: relative;
-   margin: 0 12px 12px 0;
- }
-
- .size__radio [type="radio"] {
-   position: absolute;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-   z-index: 2;
-   opacity: 0;
-   cursor: pointer;
- }
-
- .size__radio-label {
-   border: 1px solid rgba(0, 0, 0, 0.08);
-   padding: 7px 15px;
-   background-color: #ffffff;
-   font-size: 13px;
-   color: #333333;
-   cursor: pointer;
-   display: inline-block;
- }
-
- .size__radio input:checked+label {
-   border-color: #333333;
- }
-
- .pd-detail__policy-list {
-   margin: 0;
-   padding-left: 26px;
-   font-size: 14px;
-   list-style: none;
- }
+      .color__radio {
+        position: relative;
+        line-height: 1.89;
+        margin-right: 36px;
+        display: inline-block;
+      }
+      
+      .color__radio [type="radio"] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-width: 30px;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+      }
+      
+      .color__radio-label {
+        position: initial;
+        display: inline-block;
+      }
+      
+      .color__radio-label:before,
+      .color__radio-label:after {
+        content: '';
+        width: 30px;
+        height: 30px;
+        display: block;
+        border: 2px solid transparent;
+        z-index: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: border-color 0.3s; /* Thêm hiệu ứng chuyển động cho border-color */
+      }
+      
+      .color__radio-label:after {
+        transform: scale(0.6);
+        background-color: inherit;
+      }
+      
+      .color__radio input:checked + label:before {
+        border-color: #d2d2d2;
+      }
+      
+      /* Hiệu ứng hover */
+      .color__radio:hover .color__radio-label:before {
+        border-color: #0c18c0;
+      }
+      
+      /* Hiệu ứng active */
+      .color__radio input:checked + label:active:before {
+        border-color: #0c18c0;
+      }
+      .size__radio {
+        position: relative;
+        margin: 0 12px 12px 0;
+      }
+      
+      .size__radio [type="radio"] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+      }
+      
+      .size__radio-label {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 7px 15px;
+        background-color: #ffffff;
+        font-size: 13px;
+        color: #333333;
+        cursor: pointer;
+        display: inline-block;
+        transition: border-color 0.3s, background-color 0.3s, color 0.3s; /* Thêm hiệu ứng chuyển động */
+      }
+      
+      .size__radio input:checked + label {
+        border-color: #333333;
+      }
+      
+      /* Hiệu ứng hover */
+      .size__radio:hover .size__radio-label {
+        border-color: #0c18c0;
+        background-color: #f0f0f0;
+        color: #0c18c0;
+      }
+      
+      /* Hiệu ứng active */
+      .size__radio input:checked + label:active {
+        border-color: #0c18c0;
+        background-color: #e0e0e0;
+        color: #0c18c0;
+      }
+      .pd-detail__policy-list {
+  margin: 0;
+  padding-left: 26px;
+  font-size: 14px;
+  list-style: none; }
+  .pd-detail__policy-list > li i {
+    color: #009444; }
+  .pd-detail__policy-list > li span {
+    color: #7f7f7f; }
 
  .pd-detail__policy-list>li i {
    color: #009444;
@@ -10287,6 +10313,37 @@ trên dưới cho cân đối */
    font-size: 3.25rem;
    display: block;
  }
+.b-next {
+  right: 0; }
+/* Hiệu ứng hover */
+.far.fa-heart:hover {
+  color:  #0c18c0;
+}
+
+/* Hiệu ứng active */
+.far.fa-heart:active {
+  color:  #0c18c0;
+}
+.fas.fa-star {
+  color: #0c18c0;
+}
+.fas.fa-star-half-alt {
+  color: #0c18c0
+}
+.w-r__link.btn--e-brand-b-2 {
+  color: #fff; /* Màu trắng */
+  font-weight: bold; /* In đậm */
+  transition: color 0.3s; /* Hiệu ứng chuyển động khi thay đổi màu */
+  background-color: #0c18c0;
+
+}
+
+.w-r__link.btn--e-brand-b-2:hover {
+  color: #0c18c0; /* Màu hover */
+  background-color: #d3d3d3;
+
+}
+
 
  .content-span-3 {
    display: block;
