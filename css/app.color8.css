@@ -6918,7 +6918,7 @@ trên dưới cho cân đối */
 
  .bp-mini__h1>a {
    transition: color 110ms ease-in-out;
-   font-size: 14px;
+   font-size: 16px;
    font-weight: 600;
    color: #333333;
  }
@@ -9235,10 +9235,10 @@ trên dưới cho cân đối */
   .tool-style__form-wrap {
     display: block; }
     .tool-style__form-wrap div + div {
-      margin-left: 0; } }
+      margin-left: 0; } } */
   .body {
       margin: 0; /* Loại bỏ margin mặc định của body 
-    }*/
+    } 
     
   .top-banner {
     /*Thiết lập màu nền Banner là màu chủ đề của Webiste*/
@@ -10104,7 +10104,7 @@ button #switch-mode{
    .mega-image {
      margin: auto 0;
    }
- }
+ 
 
  /* Extension Mini Cart */
  .mini-cart-shop-link {
