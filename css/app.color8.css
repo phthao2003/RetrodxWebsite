@@ -512,19 +512,35 @@ body {
     color: #1a4496; }
 
 .gl-h1 {
-  color: #333333;
+  color: #303030;
   font-size: 18px;
   margin-bottom: 8px; }
-
 .gl-text {
   display: block;
-  color: #a0a0a0;
+  color: #303030;
   font-size: 13px; }
-
 .gl-label {
   margin-bottom: 8px;
   display: block;
-  color: #333333;
+  color: #303030;   
+  font-size: 13px;
+  font-weight: 600; }
+/*Sửa*/
+.form-gl-h1 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.form-gl-text {
+  display: block;
+  color: white;
+  font-size: 13px; }
+
+.form-gl-label {
+  margin-bottom: 8px;
+  display: block;
+  color: white;
   font-size: 13px;
   font-weight: 600; }
 
@@ -1708,7 +1724,7 @@ input::-ms-clear {
   .text-area--border-radius {
     border-radius: 25px; }
   .text-area--primary-style {
-    color: #5c636c;
+    color: white;
     transition: all 0.6s linear;
     border: 2px solid transparent;
     background-color: #f1f1f1; }
@@ -2967,16 +2983,23 @@ input::-ms-clear {
       color: #0c18c0; }
   .route-box i {
     margin-right: 2px; }
-
-.f-cart__pad-box {
+/*Chỉnh nền form*/
+/* .f-cart__pad-box {
   border: 1px solid #eee;
-  padding: 32px 22px 35px; }
-
+  padding: 32px 22px 35px; } */
+.f-cart__pad-box {
+    border: 1px solid #eee;
+    padding: 32px 22px 35px;
+    background-image: url('../images/formbg.png');
+    background-size: cover; /* Điều chỉnh kích thước hình ảnh phù hợp với khung */
+    background-repeat: no-repeat; /* Ngăn chặn việc lặp lại hình ảnh */
+  }
+  
 .f-cart__table {
   width: 100%;
   border-collapse: collapse; }
   .f-cart__table td {
-    color: #333333;
+    color: white;
     vertical-align: middle;
     font-size: 14px;
     font-weight: 600;
@@ -2988,7 +3011,7 @@ input::-ms-clear {
   .f-cart__table tr:last-child td {
     font-size: 16px;
     font-weight: 700;
-    color: #0c18c0; }
+    color: #FF5F1F; }
 
 .f-cart__ship-link {
   font-size: 13px;
@@ -4952,7 +4975,8 @@ input::-ms-clear {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: #333333;
-  right: 13px; }
+  right: 13px; 
+  text-align: left;}
 
 .shop-w__category-list {
   overflow: auto;
@@ -5073,7 +5097,7 @@ input::-ms-clear {
 
 .rating__check-star-wrap > i {
   margin-left: 2px;
-  color: #ff4500;
+  color: #0c18c0;
   transition: color .4s ease-in-out; }
   .rating__check-star-wrap > i:first-child {
     margin-left: 0; }
@@ -5238,7 +5262,8 @@ input::-ms-clear {
     box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.2);
     transition: all 300ms ease-in-out;
     opacity: 0;
-    visibility: hidden; }
+    visibility: hidden; 
+    z-index: 10;}
   .is-grid-active .product-m__wishlist {
     text-align: right; }
     .is-grid-active .product-m__wishlist a {
@@ -5412,7 +5437,6 @@ input::-ms-clear {
   .shop-p__pagination > li:not(.is-active) > a:hover {
     color: #0c18c0;
     text-decoration: underline; }
-
 .shop-a__wrap {
   position: fixed;
   top: 0;
@@ -5459,7 +5483,208 @@ input::-ms-clear {
     display: block; }
     .tool-style__form-wrap div + div {
       margin-left: 0; } }
-
+  .body {
+      margin: 0; /* Loại bỏ margin mặc định của body */
+    }
+    
+  .top-banner {
+    /*Thiết lập màu nền Banner là màu chủ đề của Webiste*/
+    background-color: #0c18c0;
+    /* Màu chữ trắng để tương phản với nền */
+    color: #ffffff;
+    /* Khoảng cách giữa nội dung và mép banner */ 
+    padding: 10px; 
+    /*Căn chỉnh văn bản trong Banner ở giữa*/
+    text-align: center;
+    /*Ẩn bất kỳ nội dung nào nằm ngoài phạm vi của Banner*/
+    overflow: hidden;
+    }
+    
+  #banner-text {
+    /*Không xuống dòng tự động*/
+    white-space: nowrap;
+    /*Kích thước chữ là 1rem*/
+    font-size: 1rem;
+    /*Độ đậm chữ bình thường*/
+    font-weight: normal; 
+    /*Hiệu ứng chạy chữ(marquee) với thời gian mỗi lần 15s, liner, lặp lại*/
+    animation: marquee 15s linear infinite;
+    display: inline-block;
+    }
+    
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+    .banner {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+    .sale-badge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #0c18c0; /* Sets the badge color */
+      color: white; /* Sets the text color for contrast */
+      padding: 5px 15px; /* Adds some padding around the text */
+      z-index: 10; /* Ensures the badge is above the other elements */
+      transform: translateX(-50%) translateY(20%) rotate(-45deg); /* Positions and rotates the badge */
+      transform-origin: 0 0; /* Sets the origin of transform to top left corner */
+      font-size: 0.9em; /* Adjusts the font size of the badge text */
+      border-radius: 3px; /* Optional: if you want rounded corners for the badge */
+      z-index: 5;
+    }
+    
+    
+    /*Darkmode*/
+    .dark-mode {
+      background-color: #121212; /* Dark background */
+      color: #ffffff; /* Light text */
+    }
+    /*Chữ trong DM*/
+    .dark-mode a {
+      color: white; /* Light link color */
+    }
+    /*span trong DM*/
+    /* Add more styles as needed */
+    .dark-mode span {
+      color: white;
+      font-weight: bold;
+    }
+    /*hover descripttion trong DM*/
+     .dark-mode .product-m__preview-description span {
+      margin-bottom: 8px;
+      font-size: 12px;
+      color: #235ac5; }
+    
+      .dark-mode .is-list-active .product-m__preview-description {
+        font-size: 12px;
+        color: black; }
+    /**/
+    .dark-mode .select-box--transparent-b-2:focus::-ms-value {
+      color: whitesmoke;
+      background-color: black; }
+    
+    .dark-mode .select-box--transparent-b-2 {
+      color: white;
+      border: 1px solid transparent;
+      background-color: transparent; }
+    .dark-mode .select-box--transparent-b-2:focus::-ms-value {
+      color: white;
+      background-color: #121212; }
+    /*cái nền của phần bộ lọc*/
+    .dark-mode .shop-w--style {
+      border: 1px solid black;
+      background-color: #0C134F;
+      box-shadow: 0 6px 15px 0 rgba(36, 37, 38, 0.08); }
+    
+    .dark-mode .product-m__name {
+      color: white;
+    }
+    /*Chữ*/
+    .dark-mode ul a {
+      color:white
+    }
+    .dark-mode li a {
+      color: white
+    }
+    
+    /*chữ danh mục ở bộ lọc tìm kiếm*/
+    .dark-mode .shop-w__h {
+      font-size: 14px;
+      padding: 14px 18px;
+      border-bottom: 1px solid #efefef;
+      color: white;
+      font-weight: 700;
+      line-height: 20px; }
+    
+    /*Sao màu trắng trong DM*/
+    .dark-mode .rating__check-star-wrap > i {
+      margin-left: 2px;
+      color: beige;
+      transition: color .4s ease-in-out; }
+      .rating__check-star-wrap > i:first-child {
+        margin-left: 0; }
+    
+    .dark-mode .shop-p__pagination > li.is-active > a {
+      background-color: gray; }
+    /*secondary nav======CHƯA ĐƯỢC*/
+      .dark-mode .has-superscript--purple:before {
+        background-color: #8d54ec; }
+      .has-superscript--orange:before {
+        background-color: #0c18c0; }
+      .has-superscript--mud:before {
+        background-color: #878a85; }
+      .has-superscript--ruby:before {
+        background-color: #ee1a3d; }
+    
+  @media (max-width: 991px) {
+      .dark-mode .header--style-3 {
+        position: relative;
+        background-color: #242424; } }
+  .banner_under_filter {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+  }
+  .dark-mode .is-grid-active .product-m__name > a {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.5s;}
+  .dark-mode .is-grid-active .product-m__price {
+    line-height: 1.2;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+#header--style-1 button{
+  outline: none;
+  border:none;
+  background: none;
+}
+.dark-mode .shop-w__category-list > li ul .has-list > a {
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+}
+.dark-mode .is-list-active .product-m__price {
+  margin-bottom: 8px;
+  line-height: 1.2;
+  color: #0c18c0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.dark-mode .is-list-active .product-m__category > a {
+  color: #0c18c0;
+  transition: color 0.5s;
+  font-size: 12px;
+}
+.dark-mode .is-list-active .product-m__name > a {
+  color: #0c18c0;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.5s;
+}
+.dark-mode   .check-box__label {
+  position: initial;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  margin-left: 24px;
+  white-space: normal; }
+.dark-mode option a{
+  color:#000000
+}
+button #switch-mode{
+  outline: none;
+  border:none;
+  background: none;
+}
 /*--------------------------------------------------------------
 20.0 Vendor Extension Pages
 --------------------------------------------------------------*/
@@ -5510,7 +5735,12 @@ input::-ms-clear {
 @media (max-width: 991px) {
   .tooltip.show {
     opacity: 0; } }
-
+  .dark-mode  .is-list-active .product-m__name > a {
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.5s;
+  }
 /*--------------------------------------------------------------
 20.2 jquery.shopnav
 --------------------------------------------------------------*/
@@ -6432,49 +6662,3 @@ input::-ms-clear {
 
 #js-product-detail-modal-thumbnail:hover .pt-prev, #js-product-detail-modal-thumbnail:hover .pt-next {
   opacity: .8; }
-  body {
-    margin: 0; /* Loại bỏ margin mặc định của body */
-}
-
-.top-banner {
-    background-color: #0c18c0;
-    color: #ffffff; /* Màu chữ trắng để tương phản với nền */
-    padding: 10px; /* Khoảng cách giữa nội dung và mép banner */
-    text-align: center;
-    overflow: hidden;
-}
-
-#banner-text {
-    white-space: nowrap;
-    font-size: 1rem; /* Tuỳ chỉnh kích thước chữ */
-    font-weight: normal; /* Tuỳ chỉnh độ đậm của chữ */
-    animation: marquee 15s linear infinite;
-    display: inline-block;
-}
-
-@keyframes marquee {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-.banner {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-.sale-badge {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #0c18c0; /* Sets the badge color */
-  color: white; /* Sets the text color for contrast */
-  padding: 5px 15px; /* Adds some padding around the text */
-  z-index: 10; /* Ensures the badge is above the other elements */
-  transform: translateX(-50%) translateY(20%) rotate(-45deg); /* Positions and rotates the badge */
-  transform-origin: 0 0; /* Sets the origin of transform to top left corner */
-  font-size: 0.9em; /* Adjusts the font size of the badge text */
-  border-radius: 3px; /* Optional: if you want rounded corners for the badge */
-}
-
-
