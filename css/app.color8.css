@@ -4181,26 +4181,33 @@ trên dưới cho cân đối */
  }
 
  .team-member__info {
-   padding: 16px;
+   padding: 18px 0;
    text-align: center;
  }
 
  .team-member__name {
    display: block;
-   font-size: 15px;
+   font-size: 18px;
    font-weight: 600;
    color: black;
+
  }
 
  .team-member__heading {
   height: 60px; 
-  padding: 5px;
+  padding: 3px;
  }
 
  .team-member__job-title {
    display: block;
-   font-size: 14px;
+   font-size: 17px;
+   font-weight: bold;
    color: var(--main-color);
+ }
+
+ .team-member__job-title-role {
+  font-size: 15px;
+  color: black;
  }
 
  .team-member:hover {
@@ -10412,7 +10419,7 @@ button #switch-mode{
 }
 
 .u-img-fluid:hover {
-  transform: scale(1.1); /* Tăng kích thước khi hover qua (thay đổi giá trị theo ý muốn) */
+  transform: scale(2.5); /* Tăng kích thước khi hover qua (thay đổi giá trị theo ý muốn) */
 }
 
 
