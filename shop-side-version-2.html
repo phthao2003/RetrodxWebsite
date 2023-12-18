@@ -32,21 +32,26 @@
     </style>
     <div class="preloader is-active">
         <div class="preloader__wrap">
-
-            <img class="preloader__img" src="images/preloader.png" alt=""></div>
+            <!-- Thêm hình ảnh cho preloader -->
+            <img class="preloader__img" src="images/favicon.png" alt="">
+        </div>
     </div>
 
     <!--====== Main App ======-->
     <div id="app">
     <!--===== Banner tự động =====-->
     <div class="top-banner">
-        <p id="banner-text">CHÀO MỪNG GIÁNG SINH - GIẢM GIÁ 15% TẤT CẢ CÁC MẶT HÀNG</p>
+        <p id="banner-text">CHÀO MỪNG GIÁNG SINH - GIẢM GIÁ 20% TẤT CẢ CÁC MẶT HÀNG</p>
     </div>
         <!--====== Main Header ======-->
         <header class="header--style-1">
 
             <!--====== NAV 1 - bao gồm logo, tìm kiếm, thông tin liên lạc  ======-->
+            <div class="top-banner">
+                <p id="banner-text">CHÀO MỪNG GIÁNG SINH - GIẢM GIÁ 15% TẤT CẢ CÁC MẶT HÀNG</p>
+            </div>
             <nav class="primary-nav primary-nav-wrapper--border">
+
                 <div class="container">
 
                     <!--====== Primary Nav ======-->
@@ -60,10 +65,9 @@
                         <!--====== End - Main Logo ======-->
 
                         <!--====== Dark mode button =====-->
-                            <button id="switch-mode">
-                                <i class="bi bi-moon-stars-fill"></i>
-                            </button>
-                        
+                        <button type="button" id="switch-mode" aria-label="Switch Mode">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
                         <!--====== Search Form ======-->
                         <!-- setup thanh tìm kiếm với nền tảng form và khai báo là loại submit  -->
                         <form class="main-form">
@@ -535,7 +539,7 @@
                                     </li>
                                     <li class="has-dropdown">
 
-                                        <a href="blog-right-sidebar.html">Sản phẩm<i
+                                        <a href="shop-side-version-2.html">Sản phẩm<i
                                                 class="fas fa-angle-down u-s-m-l-6"></i></a>
 
                                         <!--====== Dropdown ======-->
@@ -603,7 +607,7 @@
                                     </li>
                                     <li>
                                         <!-- dẫn đến id #sale -->
-                                        <a class="bling" href="#sale"><span>Khuyến mãi</span></a>
+                                        <a class="bling" href="index.html#sale"><span>Khuyến mãi</span></a>
                                     </li>
                                 </ul>
                                 <!--====== End - List ======-->
@@ -814,7 +818,8 @@
 
             <!--====== Section 1 ======-->
             <!--Tạo khung chứa phần bộ lọc tìm kiếm-->
-            <div class="u-s-p-y-90">
+          
+    <div class="fix-ruler"></div>
                 <!-- <div>-->
  <!--CHƯA XONG                   <img src="https://img.freepik.com/free-vector/gradient-texture-technology-linkedin-banner_23-2149156061.jpg?w=1380&t=st=1702778675~exp=1702779275~hmac=80bab6cbdd21e591d00005ba293376b30b97f97816f21236bc207ac040d2aaa7" width="1000px" height="300px">
                 </div> -->
@@ -828,6 +833,7 @@
                                     <span>BỘ LỌC TÌM KIẾM</span></h1>
                                 <div class="shop-w-master__sidebar">
                                     <div class="u-s-m-b-30">
+                                        <div class="ruler">
                                         <div class="shop-w shop-w--style">
                                             <div class="shop-w__intro-wrap">
                                                 <!--===== Bộ lọc theo Danh Mục =====-->
@@ -1052,6 +1058,7 @@
                                                 </ul>
                                             </div>
                                         </div>
+                                    </div>
                                     </div>
                                     <!--===== Bộ Lọc theo Đánh Giá =====-->
                                     <div class="u-s-m-b-30">
@@ -1318,6 +1325,7 @@
                                                         <!--Nút Thêm vào Giỏ hàng sẽ hiện lên khi hover vào-->
                                                         <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a></div>
                                                 </div>
+                                                
                                                 <div class="product-m__content">
                                                     <div class="product-m__category">
                                                         <!--===== Danh mục chứa sản phẩm-->
@@ -1325,7 +1333,7 @@
                                                         <a href="shop-side-version-2.html">Bàn Phím</a></div>
                                                     <div class="product-m__name">
                                                         <!--Tên Sản phẩm-->
-                                                        <a href="product-detail.html">Bàn phím cơ</a></div>
+                                                        <a href="product-detail.html"> Bàn Phím Cơ XRS Gaming</a></div>
                                                         <!--Ký hiệu sao (fa-star) lấy từ Font Awesome, hiển thị cùng lúc khi hover vào-->
                                                     <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                                                         <!-- Số lượt đánh giá của sản phẩm-->
@@ -1409,7 +1417,7 @@
                                                         <a href="shop-side-version-2.html">Laptop Gaming</a></div>
                                                     <div class="product-m__name">
                                                         <!--Tên Sản phẩm-->
-                                                        <a href="product-detail.html">Laptop Dell Alienware M17 R3</a></div>
+                                                        <a href="product-detail.html">Laptop Dell Alienware M17</a></div>
                                                         <!--Ký hiệu sao (fa-star) lấy từ Font Awesome, hiển thị cùng lúc khi hover vào-->
                                                     <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                                                         <!-- Số lượt đánh giá của sản phẩm-->
@@ -1451,7 +1459,7 @@
                                                         <a href="shop-side-version-2.html">Tai Nghe</a></div>
                                                     <div class="product-m__name">
                                                         <!--Tên Sản phẩm-->
-                                                        <a href="product-detail.html">Tai nghe Xiberia S11 Bluetooth</a></div>
+                                                        <a href="product-detail.html">Tai nghe Xiberia S11</a></div>
                                                         <!--Ký hiệu sao (fa-star) lấy từ Font Awesome, hiển thị cùng lúc khi hover vào-->
                                                     <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                                                         <!-- Số lượt đánh giá của sản phẩm-->
@@ -1493,7 +1501,7 @@
                                                         <a href="shop-side-version-2.html">PS5 - Xbox - Nintendo</a></div>
                                                     <div class="product-m__name">
                                                         <!--Tên Sản phẩm-->
-                                                        <a href="product-detail.html">DualSense Wireless Controller</a></div>
+                                                        <a href="product-detail.html">DualSense Wireless P3D</a></div>
                                                         <!--Ký hiệu sao (fa-star) lấy từ Font Awesome, hiển thị cùng lúc khi hover vào-->
                                                     <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
                                                         <!-- Số lượt đánh giá của sản phẩm-->
@@ -1535,7 +1543,7 @@
                                                         <a href="shop-side-version-2.html">Phụ kiện</a></div>
                                                     <div class="product-m__name">
                                                         <!--Tên Sản phẩm-->
-                                                        <a href="product-detail.html">Thermaltake Riing 12 Case Fan</a></div>
+                                                        <a href="product-detail.html">Thermaltake Riing 12 Case</a></div>
                                                         <!--Ký hiệu sao (fa-star) lấy từ Font Awesome, hiển thị cùng lúc khi hover vào-->
                                                     <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                                                         <!-- Số lượt đánh giá của sản phẩm-->
@@ -1619,7 +1627,7 @@
                                                         <a href="shop-side-version-2.html">Bàn Phím</a></div>
                                                     <div class="product-m__name">
                                                         <!--Tên Sản phẩm-->
-                                                        <a href="product-detail.html">Bàn phím Tesoro Gram MX One</a></div>
+                                                        <a href="product-detail.html">Bàn phím Tesoro Gram MX </a></div>
                                                         <!--Ký hiệu sao (fa-star) lấy từ Font Awesome, hiển thị cùng lúc khi hover vào-->
                                                     <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
                                                         <!-- Số lượt đánh giá của sản phẩm-->
@@ -1703,7 +1711,7 @@
                                                         <a href="shop-side-version-2.html">Chuột</a></div>
                                                     <div class="product-m__name">
                                                         <!--Tên Sản phẩm-->
-                                                        <a href="product-detail.html">Chuột Gaming Corsair Harpoon</a></div>
+                                                        <a href="product-detail.html">Chuột Gaming Corsair </a></div>
                                                         <!--Ký hiệu sao (fa-star) lấy từ Font Awesome, hiển thị cùng lúc khi hover vào-->
                                                     <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                                                         <!-- Số lượt đánh giá của sản phẩm-->
@@ -1745,7 +1753,7 @@
                                                         <a href="shop-side-version-2.html">Màn hình</a></div>
                                                     <div class="product-m__name">
                                                         <!--Tên Sản phẩm-->
-                                                        <a href="product-detail.html">Màn hình 144hz Asus XG32VQ</a></div>
+                                                        <a href="product-detail.html">Màn hình 144hz Asus </a></div>
                                                         <!--Ký hiệu sao (fa-star) lấy từ Font Awesome, hiển thị cùng lúc khi hover vào-->
                                                     <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                                                         <!-- Số lượt đánh giá của sản phẩm-->
@@ -1844,7 +1852,10 @@
                 </div>
             </div>
             <!--====== End - Section 1 ======-->
+       
         </div>
+       
+
         <!--====== End - App Content ======-->
 
 

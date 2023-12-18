@@ -30,13 +30,18 @@
     <!-- Phân lớp và Chèn hình ảnh biểu tượng loading -->
     <div class="preloader is-active">
         <div class="preloader__wrap">
-
-            <img class="preloader__img" src="images/favicon.png" al1```````````t=""></div>
+            <!-- Thêm hình ảnh cho preloader -->
+            <img class="preloader__img" src="images/favicon.png" alt="">
+        </div>
     </div>
 
     <!--====== Main App ======-->
     <div id="app">  
 
+        <div class="top-banner">
+            <p id="banner-text">CHÀO MỪNG GIÁNG SINH - GIẢM GIÁ 20% TẤT CẢ CÁC MẶT HÀNG</p>
+         </div>
+        <!-- HEADER -->
         <!--====== Main Header - Code Header bắt đầu ======-->
         <header class="header--style-1">
 
@@ -77,7 +82,8 @@
                                 <!-- CODE PHẦN ĐIỀU HƯỚNG-->
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
                                     <!-- MỤC TÀI KHOẢN - CÓ DROPDOWN  -->
-                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Tài khoản">
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left"
+                                        title="Tài khoản">
 
                                         <a><i class="far fa-user-circle"></i></a>
                                         <!--====== Dropdown ======-->
@@ -298,13 +304,12 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-
-                                                <!--====== Vỏ máy tính ======-->
+                                            <!-- CÁC DANH MỤC CON -->
                                                 <div class="mega-menu-content js-active">
                                                     <!-- chia lớp trong menu xổ xuống chính mục thứ nhất trong mục js -->
-
+                                                    <!-- DANH MỤC CON 1 -->
                                                     <!--====== Mega Menu Row ======-->
-                                                    <!-- chia lớp hiển thị cho hàng thứ nhất -->
+                                                    <!-- chia lớp hiển thị cho hàng thứ NHẤT -->
                                                     <div class="row">
                                                         <div class="col-lg-3">
                                                             <!-- bắt đầu danh sách ở cột thứ nhất -->
@@ -417,7 +422,7 @@
                                                     <br>
 
                                                     <!--====== Mega Menu Row ======-->
-                                                    <!-- bắt đầu xuống hàng thứ hai và tương tự như hàng thứ nhất -->
+                                                    <!-- bắt đầu xuống hàng thứ HAI và tương tự như hàng thứ nhất -->
                                                     <div class="row">
                                                         <div class="col-lg-3">
                                                             <ul>
@@ -522,17 +527,41 @@
 
                                         <a href="about.html">Về Chúng Tôi</a>
                                     </li>
-                                    <li>
+                                    <li class="has-dropdown">
 
-                                        <a href="about.html">Danh mục</a>
-                                    </li>
-                                    <li>
+                                        <a href="shop-side-version-2.html">Sản phẩm<i
+                                                class="fas fa-angle-down u-s-m-l-6"></i></a>
 
-                                        <a href="about.html">Sản phẩm</a>
-                                    </li>
-                                    <li>
+                                        <!--====== Dropdown ======-->
 
-                                        <a href="about.html">Đánh giá</a>
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:200px">
+                                            <li>
+
+                                                <a href="shop-side-version-2.html">Vỏ máy tính</a>
+                                            </li>
+                                            <li>
+
+                                                <a href="shop-side-version-2.html">Bàn phím</a>
+                                            </li>
+                                            <li>
+
+                                                <a href="shop-side-version-2.html">Tai nghe</a>
+                                            </li>
+                                            <li>
+
+                                                <a href="shop-side-version-2.html">Gameing Laptops</a>
+                                            </li>
+                                            <li>
+
+                                                <a href="shop-side-version-2.html">Màn hình</a>
+                                            </li>
+                                            <li>
+
+                                                <a href="shop-side-version-2.html">Chuột</a>
+                                            </li>
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
                                     </li>
                                     <li class="has-dropdown">
 
@@ -565,6 +594,10 @@
                                     <li>
 
                                         <a href="contact.html">Liên hệ</a>
+                                    </li>
+                                    <li>
+                                        <!-- dẫn đến id #sale -->
+                                        <a class="bling" href="#sale"><span>Khuyến mãi</span></a>
                                     </li>
                                 </ul>
                                 <!--====== End - List ======-->
@@ -604,7 +637,6 @@
                                         <a class="mini-cart-shop-link"><i class="fas fa-shopping-bag"></i>
 
                                             <span class="total-item-round">3</span></a>
-
                                         <!--====== Dropdown ======-->
 
                                         <span class="js-menu-toggle"></span>
@@ -876,11 +908,16 @@
                                 </div>
                                 <!-- Chia lớp cho phần đánh giá sản phẩm -->
                                 <div class="u-s-m-b-15">
-                                    <div class="pd-detail__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-
-                                        <span class="pd-detail__review u-s-m-l-4">
-                                            <!-- Số lượt đánh giá -->
-                                            <a data-click-scroll="#view-review">23 Đánh giá</a></span></div>
+                                    <div class="product-o__rating gl-rating-style">
+                                        <div class="stars-detail">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span>(1029)</span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- Phân lớp cho số lượng tồn kho hiện tại -->
                                 <div class="u-s-m-b-15">
@@ -890,7 +927,7 @@
                                 </div>
                                 <!-- Chia lớp cho mô tả ngắn gọn về sản phẩm bên dưới -->
                                 <div class="u-s-m-b-15">
-
+                                        <div class="content-detail">
                                     <span class="pd-detail__preview-desc">
                                         <ul>THÔNG SỐ SẢN PHẨM
 
@@ -906,7 +943,9 @@
 
                                         <li>Loại switch: Akko switch v3 (Cream Blue / Cream Yellow)</li>
                                         </ul>
-                                    </span></div>
+                                    </span>
+                                </div>
+                                </div>
                                 <!-- Chia lớp cho phần thêm vào yêu thích nằm phía dưới mô tả ngắn gọn sản phẩm -->
                                 <div class="u-s-m-b-15">
                                     <div class="pd-detail__inline">
@@ -1069,7 +1108,8 @@
 
             <!--====== Product Detail Tab ======-->
             <!-- chia phần miêu tả và nội dung sản phẩm -->
-            <div class="u-s-p-y-90">
+       
+                <div class="detail-ruler">
                 <!-- Chia lớp chứa -->
                 <div class="container">
                     <!-- Chia thành hàng trong layout -->
@@ -1536,9 +1576,10 @@
                     </div>
                 </div>
             </div>
+     
             <!-- Kết thúc phần mô tả sản phẩm -->
             <!--====== End - Product Detail Tab ======-->
-            <div class="u-s-p-b-90">
+            <div class="detail-ruler">
 
                 <!--====== Section Intro ======-->
                 <!-- Phần tiêu đề các sản phẩm có thể mua cùng -->
@@ -1547,7 +1588,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section__text-wrap">
-                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">SẢN PHẨM CÙNG MUA</h1>
+                                    <h1 class="section__heading u-c-secondary u-s-m-b-12"><span>Sản phẩm</span> mua kèm</h1>
 
                                 </div>
                             </div>
@@ -1829,7 +1870,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section__text-wrap">
-                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">SẢN PHẨM TƯƠNG TỰ</h1>
+                                    <h1 class="section__heading u-c-secondary u-s-m-b-12"><span>Gợi ý</span> cho bạn</h1>
 
                                 </div>
                             </div>
@@ -1856,7 +1897,7 @@
                                             <!-- điều chỉnh khi hover lên ảnh sản phẩm thì sẽ có một màn bg bao phủ làm cho nổi bật các button bên trong để khách hàng có thể tùy chọn và khi nhấp vào giỏ hàng hiện ra trang chi tiết sản phẩm -->
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail-variable.html">
                                                 <!-- Tùy chỉnh hình ảnh cho sản phẩm thứ nhất xuất hiện -->
-                                                <img class="aspect__img" src="images\Bàn phím\razer.png" alt="Bàn phím razer"></a>
+                                                <img class="aspect__img" src="images/banphim1.jpg" alt="Bàn phím razer"></a>
                                             <div class="product-o__action-wrap">
                                                 <!-- Hành động cho sản phẩm khi hover vào hình ảnh sản phẩm -->
                                                 <ul class="product-o__action-list">
@@ -1905,7 +1946,7 @@
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail-variable.html">
 
-                                                <img class="aspect__img" src="images/Bàn phím/flsport.jpg" alt=""></a>
+                                                <img class="aspect__img" src="images/banphim2.jpg" alt=""></a>
                                             <div class="product-o__action-wrap">
                                                 <ul class="product-o__action-list">
                                                     <li>
@@ -1946,7 +1987,7 @@
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail-variable.html">
 
-                                                <img class="aspect__img" src="images/Bàn phím/E-Dra.jpg" alt=""></a>
+                                                <img class="aspect__img" src="images/banphim3.jpg" alt=""></a>
                                             <div class="product-o__action-wrap">
                                                 <ul class="product-o__action-list">
                                                     <li>
@@ -1985,7 +2026,7 @@
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail-variable.html">
 
-                                                <img class="aspect__img" src="images/Bàn phím/kit.jpg" alt=""></a>
+                                                <img class="aspect__img" src="images/banphim4.jpg" alt=""></a>
                                             <div class="product-o__action-wrap">
                                                 <ul class="product-o__action-list">
                                                     <li>
