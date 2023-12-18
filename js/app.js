@@ -1,6 +1,11 @@
+
+
+// template
+
 /**
  * This is main script file that contains JS code.
  */
+
 (function ($) {
     // Main Object
     var RESHOP = {};
@@ -376,7 +381,6 @@
         }
     };
 
-
     // Blog Post Gallery
     RESHOP.blogPostGallery = function() {
         if ($collectionPostGallery.length) {
@@ -684,3 +688,24 @@
         RESHOP.shopPerspectiveChange();
         RESHOP.shopSideFilter();
 })(jQuery);
+
+
+// Toggle dark mode
+const darkModeToggle = document.getElementById('switch-mode'); // Replace with your actual button ID or class
+darkModeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+
+/*===== Banner chữ chạy =====*/
+document.addEventListener("DOMContentLoaded", function() {
+    const bannerText = document.getElementById('banner-text');
+    const originalText = "CHÀO MỪNG GIÁNG SINH - GIẢM GIÁ 15% TẤT CẢ CÁC MẶT HÀNG";
+
+    function updateBannerText() {
+        const repeatedText = originalText.repeat(1); // Lặp lại chuỗi 2 lần
+        bannerText.textContent = repeatedText;
+    }
+
+    updateBannerText(); // Cập nhật ban đầu
+    setInterval(updateBannerText, 3000); // Cập nhật mỗi 3 giây
+});

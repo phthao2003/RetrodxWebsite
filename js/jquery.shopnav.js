@@ -190,9 +190,6 @@
             smallScreenFlag = windowWidth();
         };
 
-
-
-
         // Check if the page has Mega menu
         checkTabs();
         // Attach click on toggle button
