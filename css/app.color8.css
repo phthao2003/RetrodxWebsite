@@ -4360,17 +4360,17 @@ trên dưới cho cân đối */
 
 .table-p {
   width: 100%;
-  border: 1px solid #eee;
+  border: 1px solid var(--main-color);
   border-collapse: collapse; }
   .table-p tr {
     position: relative;
-    border-top: 1px solid #eee; }
+    border-top: 1px solid var(--main-color); }
   .table-p td {
     padding: 20px; }
   .table-p__box {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;var(--main-color);
         flex-wrap: nowrap;
     -ms-flex-align: center;
         align-items: center; }
@@ -8991,7 +8991,7 @@ button #switch-mode{
 /* định dạng thẻ a con của thẻ <list> nằm trong thẻ ah-list--design2 */
  .ah-list--design2>li>a {
    font-weight: 500;
-   font-size: 16px;
+   font-size: 18px;
    display: inline-block;
    padding: 31px 14px;
  }
@@ -9227,7 +9227,7 @@ button #switch-mode{
    }
 
    .ah-list>li>a:hover {
-     color: #1B469A;
+     color: var(--main-color);
    }
 
    .has-dropdown>ul>li:hover {
@@ -9248,7 +9248,7 @@ button #switch-mode{
    }
 
    .ah-list>.has-dropdown:hover>a {
-     color: #1B469A;
+     color: var(--main-color);
    }
 
    .has-dropdown>a .fa-angle-down {
