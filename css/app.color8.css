@@ -520,7 +520,7 @@ Box Module
  */
  .gl-rating-style>i {
    margin-left: 2px;
-   color: #ff9600;
+   color: var(--main-color);
  }
 
  .gl-rating-style>i:first-child {
@@ -529,7 +529,7 @@ Box Module
 
  .gl-rating-style-2>i {
    margin-left: 2px;
-   color: #ff4500;
+   color:var(--main-color);
  }
 
  .gl-rating-style-2>i:first-child {
@@ -1048,7 +1048,7 @@ giản cách mỗi chữ 2px, hiệu ứng kiểu linear trong 0.2s */
 
 .btn--e-transparent-platinum-b-2 {
   color: #0c18c0;
-  border: 2px solid #0c18c0;;
+  border: 2px solid white;
   background-color: transparent;
   transition: border-color 0.5s linear; }
   .btn--e-transparent-platinum-b-2:hover {
@@ -3850,7 +3850,6 @@ giá, button, chỉnh cách ra cho cân đối */
  .aboutus>button {
   border: none;
   border-radius: 5px;
-  padding: 25px;
  }
 
  .load-more>button {
@@ -4570,7 +4569,8 @@ trên dưới cho cân đối */
   .f-cart__table tr:last-child td {
     font-size: 16px;
     font-weight: 700;
-    color: #FF5F1F; }
+    color: white;
+    text-shadow: 0 0 5px white, 0 0 10px white; }
 
  .route-box {
    display: -ms-flexbox;
@@ -4604,38 +4604,6 @@ trên dưới cho cân đối */
 
  .route-box i {
    margin-right: 2px;
- }
-
- .f-cart__pad-box {
-   border: 1px solid #eee;
-   padding: 32px 22px 35px;
- }
-
- .f-cart__table {
-   width: 100%;
-   border-collapse: collapse;
- }
-
- .f-cart__table td {
-   color: white;
-   vertical-align: middle;
-   font-size: 14px;
-   font-weight: 600;
-   padding: 8px 0;
- }
-
- .f-cart__table td:first-child {
-   text-align: left;
- }
-
- .f-cart__table td {
-   text-align: right;
- }
-
- .f-cart__table tr:last-child td {
-   font-size: 16px;
-   font-weight: 700;
-   color: white;
  }
 
  .f-cart__ship-link {
@@ -7120,8 +7088,20 @@ trên dưới cho cân đối */
  }
 
  .pd-detail__form .btn {
-   padding: 1rem 3rem;
    border-radius: 0.375rem;
+ }
+/* hover review */
+ .fas.fa-star{
+   transition: transform 0.3s;
+ }
+ .fas.fa-star:hover{
+   color: #0077B5;
+ }
+ .fas.fa-star-half-alt{
+ transition: transform 0.3s;
+ }
+ .fas.fa-star-half-alt:hover{
+   color: #0077B5;
  }
 
  /**
@@ -8826,7 +8806,7 @@ background: black;
   }
   .dark-mode .is-grid-active .product-m__name > a {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     transition: color 0.5s;}
   .dark-mode .is-grid-active .product-m__price {
@@ -8991,7 +8971,7 @@ button #switch-mode{
 /* định dạng thẻ a con của thẻ <list> nằm trong thẻ ah-list--design2 */
  .ah-list--design2>li>a {
    font-weight: 500;
-   font-size: 18px;
+   font-size: 16px;
    display: inline-block;
    padding: 31px 14px;
  }
@@ -10436,7 +10416,12 @@ button #switch-mode{
 }
 
 
-/* Hiệu ứng hover */
-.btn .btn--e-brand-b-2:hover {
-  background-color: #e8f0f8; /* Màu nền khi hover */
+.pd-grap-modal {
+  position: relative;
+}
+.pd-detail__name-modal {
+  display: block;
+  color: #333333;
+  font-size: 24px;
+  font-weight: 600;
 }

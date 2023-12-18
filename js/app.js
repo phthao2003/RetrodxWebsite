@@ -699,7 +699,7 @@ darkModeToggle.addEventListener('click', () => {
 /*===== Banner chữ chạy =====*/
 document.addEventListener("DOMContentLoaded", function() {
     const bannerText = document.getElementById('banner-text');
-    const originalText = "CHÀO MỪNG GIÁNG SINH - GIẢM GIÁ 15% TẤT CẢ CÁC MẶT HÀNG";
+    const originalText = "CHÀO MỪNG GIÁNG SINH - GIẢM GIÁ 20% TẤT CẢ CÁC MẶT HÀNG";
 
     function updateBannerText() {
         const repeatedText = originalText.repeat(1); // Lặp lại chuỗi 2 lần
