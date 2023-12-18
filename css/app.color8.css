@@ -250,6 +250,12 @@ Box Module
    }
  }
 
+ @media (min-width: 430px) {
+  .box {
+    padding: 2px;
+  }
+ }
+
  /* App Content with container */
  @media (max-width: 1024px) {
    html.boxed .app-content .container {
@@ -860,7 +866,7 @@ Box Module
   max-width: 100%;
   height: auto; }
 /*=====Zoom lên khi hover vào======*/
-.u-img-fluid {
+.u-img-fluid:hover {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -937,6 +943,11 @@ Box Module
    color:var(--main-color);
  }
 
+.cart-button-ruler{
+  display:flex;
+  align-items: center;
+  text-align: center;
+}
 
  .btn--e-brand {
    color: #ffffff;
@@ -2792,7 +2803,8 @@ giá, button, chỉnh cách ra cho cân đối */
 
  #quick-look .modal-dialog {
    width: 100%;
-   max-width: 991px;
+   max-width: 800px;
+   margin-top:100px;
  }
 
  #quick-look .modal-body {
@@ -4282,11 +4294,6 @@ trên dưới cho cân đối */
 --------------------------------------------------------------*/
  .g-map {
    background-color: #eee;
- }
-
- #map {
-   height: 450px;
-   width: 100%;
  }
 
 .contact-ruler{
@@ -9560,7 +9567,7 @@ button #switch-mode{
    background-color: #ffffff;
    box-shadow: -2px 0px 5px 1px rgba(0, 0, 0, 0.06);
    width: 478px;
-   padding: 14px;
+   padding: 20px;
    position: absolute;
    transition: all 0.3s ease;
    z-index: 998;
@@ -9571,7 +9578,7 @@ button #switch-mode{
  }
 
  .mini-product-container {
-   max-height: 280px;
+   max-height: 240px;
    padding: 17px;
    overflow-y: auto;
  }
@@ -9673,7 +9680,7 @@ button #switch-mode{
  }
 
  .mini-total {
-   margin-bottom: 16px;
+   margin-bottom: 10px;
    display: -ms-flexbox;
    display: flex;
    -ms-flex-wrap: nowrap;
@@ -10414,11 +10421,14 @@ button #switch-mode{
   transform: scale(1.1); /* Tăng kích thước khi hover qua (thay đổi giá trị theo ý muốn) */
 }
 
-.u-img-fluid {
-  transition: transform 0.3s; /* Hiệu ứng chuyển động cho transform */
+.u-img-fluid-wish {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
-.u-img-fluid:hover {
+.u-img-fluid-wish:hover {
   transform: scale(2.5); /* Tăng kích thước khi hover qua (thay đổi giá trị theo ý muốn) */
 }
 
