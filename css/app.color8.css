@@ -4617,7 +4617,7 @@ trên dưới cho cân đối */
  }
 
  .f-cart__table td {
-   color: #333333;
+   color: white;
    vertical-align: middle;
    font-size: 14px;
    font-weight: 600;
@@ -4635,7 +4635,7 @@ trên dưới cho cân đối */
  .f-cart__table tr:last-child td {
    font-size: 16px;
    font-weight: 700;
-   color: #1B469A;
+   color: white;
  }
 
  .f-cart__ship-link {
