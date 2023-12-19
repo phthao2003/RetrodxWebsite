@@ -2454,16 +2454,17 @@ giá, button, chỉnh cách ra cho cân đối */
   z-index: 2;
   position: absolute;
   top: 0;
-  right: -50px;
-  background-color: transparent;
+  right: -1px;
+  background-color: var(--main-color);
   padding: 8px;
   font-size: 24px;
   border: 0;
-  color: #ffffff;
+  color: white;
   cursor: pointer;
   transition: color 110ms ease-in-out; }
   .dismiss-button:hover {
-    color: #0c18c0; }
+    color: var(--main-color);
+    background-color: transparent}
 
  .radio-box input:checked~.radio-box__state.radio-box__state--primary label:before {
    border-color: #1B469A;
@@ -2601,23 +2602,6 @@ giá, button, chỉnh cách ra cho cân đối */
  }
 
  /* Modal Component */
- .dismiss-button {
-   z-index: 2;
-   position: absolute;
-   top: 0;
-   right: -50px;
-   background-color: transparent;
-   padding: 8px;
-   font-size: 24px;
-   border: 0;
-   color: #ffffff;
-   cursor: pointer;
-   transition: color 110ms ease-in-out;
- }
-
- .dismiss-button:hover {
-   color: #1B469A;
- }
 
  #dash-newsletter .modal-dialog {
    width: 100%;
@@ -9102,7 +9086,7 @@ button #switch-mode{
      position: fixed;
      left: -315px;
      width: 315px;
-     height: 100%;
+     height:90%;
      top: 0;
      background-color: #ffffff;
      z-index: 20000;
@@ -9216,9 +9200,6 @@ button #switch-mode{
      display: none;
    }
 
-   .ah-close {
-     display: none;
-   }
 
    .ah-list>li>a:hover {
      color: var(--main-color);
@@ -9719,6 +9700,8 @@ button #switch-mode{
    width: 65%;
    margin: 0 auto;
  }
+
+ 
 
  @media (max-width: 1024px) {
    .mini-cart-shop-link>.total-item-round {
